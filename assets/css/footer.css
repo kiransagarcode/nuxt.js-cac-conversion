@@ -1,0 +1,10 @@
+footer a {
+    font-family: 'Fira Sans', sans-serif;
+    
+  }
+  
+  
+  
+  #footer-icons{
+    filter: brightness(0) saturate(100%) invert(26%) sepia(61%) saturate(799%) hue-rotate(82deg) brightness(89%) contrast(105%);
+  }

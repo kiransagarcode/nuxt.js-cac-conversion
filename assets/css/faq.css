@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  width: 100%;
+}
+body img {
+  max-width: 100%;
+}
+
+
+
+.hero-section {
+  background-image: url("./images/Group\ 1327.png");
+  background-size: cover;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-text {
+  font-size: 2.5rem !important;
+}
+#toggle-right {
+  transform: rotate(180deg);
+}
+@media (max-width: 768px) {
+  .hero-text {
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: -10%;
+  }
+  .scroll-img2 {
+    min-width: 45%;
+  }
+
+  .toggle__buttons {
+    flex-direction: row;
+  }
+
+  .toggle__buttons img {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 1.8rem !important;
+    margin-top: 50%;
+    padding-top: 0%;
+  }
+}
+@media (max-width: 576px) {
+  .toggle__buttons {
+    bottom: 0.5rem;
+  }
+}
+
+.scroll-logo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-logo:active {
+  transform: scale(0.9);
+}
+
+.scroll-buttons p {
+  font-family: "Lato", sans-serif;
+  color: #90a955;
+  font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  .scroll-buttons {
+    font-size: 1rem;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 576px) {
+  .scroll-buttons {
+    font-size: 0.67rem;
+  }
+
+  .scroll-img {
+    width: 40px;
+    height: auto;
+  }
+
+  .scroll-logo {
+    width: 20px;
+    height: auto;
+  }
+}
+
+/* faq */
+
+/* General styles for grid items */
+.grid-item {
+  background-color: #e6e6e6;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  overflow-wrap: break-word;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  background-color: #cccccc;
+}
+
+.read-more {
+  background-color: #007441;
+  color: white;
+  padding: 1px 10px;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  width: max-content;
+  margin-top: auto;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Parent container should be relatively positioned */
+.grid-item {
+  position: relative;
+}
+
+/* Position the .read-more-small button in the top-right corner */
+.read-more-small {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  color: #6b6060;
+  padding: 1px 10px;
+  border-radius: 15px;
+  transform: scaleX(0.8); /* Reduce width */
+  font-size: 1.8rem;
+  border: none;
+  text-align: center;
+  width: max-content;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.read-more-small:hover {
+  color: #2b2626;
+}
+
+.grid-item:hover .read-more-small {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.container .row > .col-12:first-child .grid-item .read-more {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.square {
+  position: relative;
+  width: 100%;
+}
+
+.square::before {
+  content: "";
+  display: block;
+  padding-top: 80%;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  overflow-wrap: break-word;
+}
+/*   
+@media (max-width: 768px) {
+  
+  .content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+    
+.square::before {
+  content: "";
+  display: block;
+  padding-top: 70%; 
+  
+}
+
+.content h3,h4{
+    font-size: 1rem;
+  }
+  .grid-item .read-more {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .grid-item:not(:nth-of-type(1)) .read-more {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.heading-title {
+font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+.heading-title {
+  font-size: 2rem;
+}
+}
+
+@media (min-width: 1200px) {
+.heading-title {
+  font-size: 2.5rem;
+}
+} */
+
+/* Modal styles */
+.bigmodal {
+  display: none;
+
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.bigmodal-content {
+  background-color: #007441 !important;
+  padding: 20px;
+  border-radius: 10px;
+  width: 88%;
+  max-width: 100%;
+  margin: auto;
+  height: 80%;
+  justify-content: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: -2px;
+  right: 24px;
+  font-size: 3rem;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Add style to button */
+
+/* Modal content inside the modal */
+.bigmodal-content h2,
+.bigmodal-content p {
+  margin-bottom: 10px;
+}
+
+/* Other styles remain the same */
+@media (max-width: 768px) {
+  .modal {
+    width: 88%; /* Take up 88% of the screen width */
+    height: 80%; /* Make it smaller on smaller screens */
+  }
+
+  .bigmodal-content {
+    padding: 15px; /* Adjust padding */
+    height: 50%; /* Allow height to adjust */
+    width: 80%; /* Full width for smaller screens */
+    max-width: 100%;
+  }
+}
+
+/* Default: Show Accordion FAQ, hide Grid FAQ */
+
+.grid-faq {
+  display: none !important;
+}
+
+.accordion-faq {
+  display: block;
+}
+
+@media (min-width: 800px) {
+  .accordion-faq {
+    display: none;
+  }
+
+  .grid-faq {
+    display: flex !important;
+  }
+}
+
+/* Set accordion background color */
+.accordion-button {
+  background-color: #e6e6e6 !important;
+  color: #333 !important;
+}
+
+/* For active accordion button */
+.accordion-button:not(.collapsed) {
+  background-color: #007441 !important;
+
+   color: #ffffff !important;
+}
+
+/* Accordion item background color */
+.accordion-item {
+  background-color: #e6e6e6;
+}
+
+/* Accordion body text color */
+.accordion-body {
+  background-color: #2b2626 !important;
+ 
+}
+
+.content h3,
+h4,
+h2,
+h1,
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 800px) and (max-width: 991px) {
+  .big-square-head {
+    padding-top: 5%;
+    font-size: 161%;
+  }
+  .big-square-p {
+    font-size: 82% !important;
+  }
+
+  .bigmodal-content {
+    height: 55%;
+  }
+
+  .small-square-profile {
+    padding-top: 20%;
+    font-size: 1rem;
+  }
+
+  .small-square-profile2 {
+    padding-top: 5%;
+    font-size: 0.9rem;
+  }
+  .small-square-buy {
+    padding-top: 20%;
+    font-size: 1.2rem;
+  }
+  .small-square-sell {
+    padding-top: 20%;
+    font-size: 1.2rem;
+  }
+
+  .large-square1 {
+    padding-top: 20%;
+    font-size: 1rem;
+  }
+  .large-square2 {
+    padding-top: 20%;
+    font-size: 1.2rem;
+  }
+  .large-square3 {
+    padding-top: 20%;
+    font-size: 1.2rem;
+  }
+  .large-square4 {
+    padding-top: 5%;
+    font-size: 1.2rem;
+  }
+  .large-square5 {
+    padding-top: 5%;
+    font-size: 1rem;
+  }
+  .large-square6 {
+    padding-top: 5%;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .small-square-profile {
+    padding-top: 20%;
+    font-size: 1.5rem;
+  }
+
+  .bigmodal-content {
+    height: 60%;
+  }
+
+  .small-square-profile2 {
+    padding-top: 2%;
+    font-size: 1.3rem;
+  }
+  .small-square-buy {
+    padding-top: 40%;
+    font-size: 1.5rem;
+  }
+  .small-square-sell {
+    padding-top: 40%;
+    font-size: 1.5rem;
+  }
+
+  .large-square1 {
+    padding-top: 25%;
+    font-size: 1.5rem;
+  }
+  .large-square2 {
+    padding-top: 25%;
+    font-size: 1.5rem;
+  }
+  .large-square3 {
+    padding-top: 25%;
+    font-size: 1.5rem;
+  }
+  .large-square4 {
+    padding-top: 5%;
+    font-size: 1.5rem;
+  }
+  .large-square5 {
+    padding-top: 5%;
+    font-size: 1.5rem;
+  }
+  .large-square6 {
+    padding-top: 5%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .big-square-head {
+    padding-top: 20%;
+  }
+
+  .bigmodal-content {
+    height: 70%;
+  }
+
+  .small-square-profile {
+    padding-top: 30%;
+    font-size: 1.7rem;
+  }
+
+  .small-square-profile2 {
+    padding-top: 5%;
+  }
+  .small-square-buy {
+    padding-top: 42%;
+  }
+  .small-square-sell {
+    padding-top: 42%;
+  }
+
+  .large-square1 {
+    padding-top: 30%;
+  }
+  .large-square2 {
+    padding-top: 30%;
+  }
+  .large-square3 {
+    padding-top: 30%;
+  }
+  .large-square4 {
+    padding-top: 30%;
+  }
+  .large-square5 {
+    padding-top: 13%;
+  }
+  .large-square6 {
+    padding-top: 24%;
+  }
+}
+
+footer a {
+  font-family: 'Fira Sans', sans-serif;
+  
+}
+
+@media(min-width:800px) and (max-width:991px){
+  .read-more-small{
+    opacity: 1;
+    font-size: 1.2rem;
+  }
+
+
+}
+
+/* .modal-content{
+  width: 82% !important;
+} */
+
