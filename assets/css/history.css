@@ -1,14 +1,4 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-  }
-  html,
-  body {
-    margin: 0;
-    padding: 0;
-  }
+
   
   
   #toggle-right {
@@ -16,7 +6,7 @@
   }
   
   .hero-section {
-    background-image: url("./img/history-background.png");
+    background-image: url("/img/history-background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

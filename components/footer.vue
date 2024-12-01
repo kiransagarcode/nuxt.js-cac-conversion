@@ -6,7 +6,7 @@
             <div class="col-md-12 text-center  pb-md-3 text-lg-start col-lg-1 text-center">
               <a href="../HOME/home.html"
                 ><img
-                  src="../public/img/logos/website-logo.svg"
+                  src="/img/logos/website-logo.svg"
                   alt="Website Logo"
                   class="footer-logo"
               /></a>
@@ -74,22 +74,22 @@
               <div class="nav justify-content-center justify-content-md-end">
                 <div class="nav-item">
                   <a class="nav-link" href="#"
-                    ><img id="footer-icons" src="../public/img/logos/twitter.svg" alt="Twitter"
+                    ><img id="footer-icons" src="/img/logos/twitter.svg" alt="Twitter"
                   /></a>
                 </div>
                 <div class="nav-item">
                   <a class="nav-link" href="#"
-                    ><img id="footer-icons" src="../public/img/logos/linkidn.svg" alt="LinkedIn"
+                    ><img id="footer-icons" src="/img/logos/linkidn.svg" alt="LinkedIn"
                   /></a>
                 </div>
                 <div class="nav-item">
                   <a class="nav-link" href="#"
-                    ><img id="footer-icons" src="../public/img/logos/google sign.svg" alt="Google"
+                    ><img id="footer-icons" src="/img/logos/google sign.svg" alt="Google"
                   /></a>
                 </div>
                 <div class="nav-item">
                   <a class="nav-link" href="https://www.facebook.com/cardamomauction/"
-                    ><img id="footer-icons"  src="../public/img/logos/facebook.svg" alt="Facebook"
+                    ><img id="footer-icons"  src="/img/logos/facebook.svg" alt="Facebook"
                   /></a>
                 </div>
               </div>

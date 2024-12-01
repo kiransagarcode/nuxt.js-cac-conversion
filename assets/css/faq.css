@@ -1,26 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap");
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Disable horizontal scrolling */
-  width: 100%;
-}
-body img {
-  max-width: 100%;
-}
 
 
 
 .hero-section {
-  background-image: url("./images/Group\ 1327.png");
+  background-image: url("/img/contact-background.png");
   background-size: cover;
 
   background-position: center;
@@ -516,10 +500,5 @@ footer a {
     font-size: 1.2rem;
   }
 
-
 }
-
-/* .modal-content{
-  width: 82% !important;
-} */
 

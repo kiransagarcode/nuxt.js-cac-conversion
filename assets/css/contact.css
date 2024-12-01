@@ -1,19 +1,7 @@
 
-* {
-    box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      text-decoration: none;
-    }
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow-x: hidden; /* Disable horizontal scrolling */
-      width: 100%;  
-    }
 
 .hero-section {
-    background-image: url("./images/Group\ 1327.png");
+    background-image: url("/img/contact-background.png");
     background-size: cover;
     
     background-position: center;

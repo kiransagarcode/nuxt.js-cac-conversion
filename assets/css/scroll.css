@@ -1,0 +1,45 @@
+
+/* scroll button section */
+
+.scroll-logo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .scroll-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .scroll-logo:active {
+    transform: scale(0.9);
+  }
+  
+  .scroll-buttons p {
+    font-family: "Lato", sans-serif;
+    color: #90a955;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 800px) {
+    .scroll-buttons {
+      font-size: 1rem;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 576px) {
+    .scroll-buttons {
+      font-size: 0.67rem;
+    }
+  
+    .scroll-img {
+      width: 40px;
+      height: auto;
+    }
+  
+    .scroll-logo {
+      width: 20px;
+      height: auto;
+    }
+  }
+  
