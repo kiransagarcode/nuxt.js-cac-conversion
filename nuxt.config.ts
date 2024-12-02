@@ -24,6 +24,7 @@ export default defineNuxtConfig({
 
   css: [
     'swiper/swiper-bundle.css',
+    
     './assets/global.css',
     'bootstrap/dist/css/bootstrap.css',
     '@fortawesome/fontawesome-svg-core/styles.css', // Add Font Awesome styles
@@ -35,8 +36,17 @@ export default defineNuxtConfig({
     transpile: ['@fortawesome/vue-fontawesome'], // Ensure Font Awesome components are transpiled
   },
 
+  vite: {
+    define: {
+      'process.env.DEBUG': false, // Avoid Vite warnings related to Popper.js
+    },
+  },
+
   plugins: [
-    // Register the modal plugin
-    '~/plugins/modal.js'
+    
+    '~/plugins/modal.js',
+    '~/plugins/bootstrap.client.js',
+    '~/plugins/faqAccordion.client.js',
+    '~/plugins/swiper.client.js',
   ]
 });
