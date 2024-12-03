@@ -31,6 +31,7 @@ export default defineNuxtConfig({
   ],
 
   modules: ['@nuxt/fonts', 'nuxt-swiper', '@vesp/nuxt-fontawesome'],
+  
 
   build: {
     transpile: ['@fortawesome/vue-fontawesome'], // Ensure Font Awesome components are transpiled
@@ -47,6 +48,6 @@ export default defineNuxtConfig({
     '~/plugins/modal.js',
     '~/plugins/bootstrap.client.js',
     '~/plugins/faqAccordion.client.js',
-    '~/plugins/swiper.client.js',
+    
   ]
 });

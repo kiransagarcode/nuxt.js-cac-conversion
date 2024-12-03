@@ -294,77 +294,7 @@
             </div>
           </div>
         </div>
-        <div class="container pb-5 mt-3">
-          <div id="slider1" class="slider-container swiper">
-            <div class="slider-content">
-              <div class="card-wrapper swiper-wrapper">
-                <div class="card1 swiper-slide">
-                  <div class="d-flex justify-content-center">
-                    <img src="/img/Thumbnail Image 1.png" alt="" />
-                  </div>
-                </div>
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="/img/Thumbnail Image 2.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="/img/Thumbnail Image 3.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="/img/Thumbnail Image 4.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card1 swiper-slide">
-                  <div class="d-flex justify-content-center">
-                    <img src="/img/Thumbnail Image 1.png" alt="" />
-                  </div>
-                </div>
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="/img/Thumbnail Image 2.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="/img/Thumbnail Image 3.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="/img/Thumbnail Image 4.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn "></div>
-          </div>
-
-          <!--swiper-->
-        </div>
+        <SwiperWhole />
       </section>
 
       <!-- retail section -->
@@ -433,83 +363,7 @@
           </div>
         </div>
 
-        <div class="container pb-5">
-          <div id="slider2" class="slider-container swiper">
-            <div class="slider-content">
-              <div class="card-wrapper swiper-wrapper">
-                <div class="card1 swiper-slide">
-                  <div class="d-flex justify-content-center">
-                    <img src="/img/Thumbnail Image 1-retail.png" alt="" />
-                  </div>
-                </div>
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="/img/Thumbnail Image 2-retail.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="/img/Thumbnail Image 3-retail.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="/img/Thumbnail Image 4-retail.png " alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card1 swiper-slide">
-                  <div class="d-flex justify-content-center">
-                    <img src="/img/Thumbnail Image 1-retail.png" alt="" />
-                  </div>
-                </div>
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="/img/Thumbnail Image 2-retail.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="/img/Thumbnail Image 3-retail.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card1 swiper-slide">
-                  <div class="image-content">
-                    <div class="d-flex justify-content-center">
-                      <img src="/img/Thumbnail Image 4-retail.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-pagination"></div>
-            <div
-              class="swiper-button-next swiper-navBtn"
-              style="color: #fff; border: 1px solid #fff"
-            ></div>
-            <div
-              class="swiper-button-prev swiper-navBtn"
-              style="color: #fff; border: 1px solid #fff"
-            ></div>
-          </div>
-
-      
-        </div>
+        <SwiperRetail/>
       </section>
 
       <section class="map" style="background-color: #f4fffb">
@@ -531,7 +385,7 @@
 
 <script setup>
 
-import Swiper from 'swiper';
+
 </script>
 
 
