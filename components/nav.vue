@@ -27,6 +27,7 @@
                       <NuxtLink to="/">
                       <span class="nav-link ms-3">HOME</span>
                     </NuxtLink>
+                   
                   </li>
                   <li class="nav-item mx-2">
                     <NuxtLink to="/history">
