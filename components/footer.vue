@@ -4,29 +4,29 @@
         <div class="container">
           <div class="row align-items-center mb-4">
             <div class="col-md-12 text-center  pb-md-3 text-lg-start col-lg-1 text-center">
-              <a href="../HOME/home.html"
+              <NuxtLink to="/"
                 ><img
                   src="/img/logos/website-logo.svg"
                   alt="Website Logo"
                   class="footer-logo"
-              /></a>
+              /></NuxtLink>
             </div>
             <div class="col d-flex align-items-center ms-4">
               <div class="nav d-flex flex-column flex-md-row">
                 <div class="nav-item">
-                  <a class="nav-link text-success" href="#auction-scroll"
-                    >Auction</a
+                  <NuxtLink class="nav-link text-success" to="/#auction-scroll"
+                    >Auction</NuxtLink
                   >
                 </div>
                 <div class="nav-item">
-                  <a class="nav-link text-success" href="#Buy-page">Buy & Sell</a>
+                  <NuxtLink class="nav-link text-success" href="/#Buy-page">Buy & Sell</NuxtLink>
                 </div>
                 <div class="nav-item">
-                  <a class="nav-link text-success" href="#">Data Analysis</a>
+                  <NuxtLink class="nav-link text-success" href="#">Data Analysis</NuxtLink>
                 </div>
                 <div class="nav-item">
-                  <a class="nav-link text-success" href="../CONTACT/contact.html"
-                    >Contact</a
+                  <NuxtLink class="nav-link text-success" to="/contact"
+                    >Contact</NuxtLink
                   >
                 </div>
               </div>
@@ -54,18 +54,16 @@
                   <a class="nav-link text-success" href="#">About</a>
                 </div>
                 <div class="nav-item">
-                  <a class="nav-link text-success" href="../FAQ/faq.html">FAQ</a>
+                  <NuxtLink class="nav-link text-success" to="/faq">FAQ</NuxtLink>
                 </div>
                 <div class="nav-item">
-                  <a class="nav-link text-success" href="#download-sec"
-                    >Download</a
-                  >
+                  <NuxtLink class="nav-link text-success" href="/#download-sec">Download</NuxtLink>
                 </div>
                 <div class="nav-item">
-                  <a
+                  <NuxtLink
                     class="nav-link text-success"
-                    href="https://cardamomauction.com/terms"
-                    >Terms</a
+                    to="https://cardamomauction.com/terms"
+                    >Terms</NuxtLink
                   >
                 </div>
               </div>
@@ -88,9 +86,9 @@
                   /></a>
                 </div>
                 <div class="nav-item">
-                  <a class="nav-link" href="https://www.facebook.com/cardamomauction/"
+                  <NuxtLink class="nav-link" to="https://www.facebook.com/cardamomauction/"
                     ><img id="footer-icons"  src="/img/logos/facebook.svg" alt="Facebook"
-                  /></a>
+                  /></NuxtLink>
                 </div>
               </div>
             </div>

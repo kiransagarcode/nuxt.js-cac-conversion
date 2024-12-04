@@ -3,9 +3,10 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
             <div class="web-logo ms-5 py-3">
-              <a href="../HOME/home.html">
+              <NuxtLink to="/">
+              
                 <img src="../public/img/logos/website-logo.svg" alt="" />
-              </a>
+              </NuxtLink>
             </div>
             <button
               class="navbar-toggler"
@@ -23,28 +24,24 @@
                 <!-- Center links when expanded -->
                 <ul class="navbar-nav mb-2 mb-lg-0">
                   <li class="nav-item mx-2">
-                    <a
-                      class="nav-link "
-                      aria-current="page"
-                      href="../HOME/home.html"
-                    >
-                      <span class="nav-link active ms-3">HOME</span>
-                    </a>
+                      <NuxtLink to="/">
+                      <span class="nav-link ms-3">HOME</span>
+                    </NuxtLink>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="">
+                    <NuxtLink to="/history">
                       <span class="nav-link ms-2">HISTORY</span>
-                    </a>
+                    </NuxtLink>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="">
-                      <span class="nav-link">CONTACTS</span>
-                    </a>
+                    <NuxtLink to="/contact">
+                      <span class="nav-link ms-2">CONTACT</span>
+                    </NuxtLink>
                   </li>
                   <li class="nav-item mx-2">
-                    <a class="nav-link" href="">
+                    <NuxtLink to="/faq">
                       <span class="nav-link ms-4">FAQ</span>
-                    </a>
+                    </NuxtLink>
                   </li>
                 </ul>
               </div>
@@ -53,18 +50,18 @@
                 class="d-flex justify-content-center align-items-center mt-3 mb-lg-1 mt-lg-0 me-lg-5 pe-lg-5"
               >
                 <a class="mx-3" href="#">
-                  <img  src="../public/img/logos/twitter.svg" id="logo-home" alt="twitter" />
+                  <img  src="/img/logos/twitter.svg" id="logo-home" alt="twitter" />
                 </a>
                 <a class="mx-3" href="#">
                   <img
-                    src="../public/img/logos/linkidn.svg"
+                    src="/img/logos/linkidn.svg"
                     id="logo-home"
                     alt="linkedin"
                   />
                 </a>
                 <a class="mx-3" href="#">
                   <img
-                    src="../public/img/logos/google sign.svg"
+                    src="/img/logos/google sign.svg"
                     id="logo-home"
                     alt="google"
                   />
@@ -77,5 +74,11 @@
   </navbar>
   </template>
   
-  <style scoped src="~/assets/css/nav.css"></style>
+  <style scoped src="~/assets/css/nav.css">
+
+
+/* Alternate for all anchor tags */
+
+
+</style>
   

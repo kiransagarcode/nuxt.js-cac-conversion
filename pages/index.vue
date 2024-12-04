@@ -294,7 +294,9 @@
             </div>
           </div>
         </div>
-        <SwiperWhole />
+
+        <SwiperWhole  />
+        <Swiper :images="imagesSet1" />
       </section>
 
       <!-- retail section -->
@@ -363,7 +365,11 @@
           </div>
         </div>
 
-        <SwiperRetail/>
+        
+    <SwiperRetail
+      
+     
+    />
       </section>
 
       <section class="map" style="background-color: #f4fffb">
@@ -384,6 +390,18 @@
 </template>
 
 <script setup>
+
+const imagesSet1 = [
+  "/img/Thumbnail Image 1.png",
+  "/img/Thumbnail Image 2.png",
+  "/img/Thumbnail Image 3.png",
+  "/img/Thumbnail Image 4.png",
+  "/img/Thumbnail Image 1.png",
+  "/img/Thumbnail Image 2.png",
+  "/img/Thumbnail Image 3.png",
+  "/img/Thumbnail Image 4.png",
+];
+
 
 
 </script>

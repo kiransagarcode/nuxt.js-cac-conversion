@@ -1,4 +1,8 @@
 
+a {
+  text-decoration: none !important;
+}
+
 
 .navbar-nav .nav-link {
     font-family: "Fira Sans", sans-serif;
