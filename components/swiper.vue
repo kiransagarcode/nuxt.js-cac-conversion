@@ -17,13 +17,13 @@
       </div>
     </div>
   </template>
-  
+
+
   <script setup>
   import { onMounted } from 'vue';
   import Swiper from 'swiper/bundle';
   import 'swiper/swiper-bundle.css'; // Ensure Swiper CSS is imported
-  
-  // Accept images as a prop
+ 
   const props = defineProps({
     images: {
       type: Array,
@@ -31,7 +31,7 @@
     }
   });
   
-  // Swiper initialization inside onMounted hook
+ 
   onMounted(() => {
     new Swiper("#slider1 .slider-content", {
       slidesPerView: 4,

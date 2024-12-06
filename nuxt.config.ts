@@ -45,9 +45,9 @@ export default defineNuxtConfig({
 
   plugins: [
     
-    '~/plugins/modal.js',
+    
     '~/plugins/bootstrap.client.js',
-    '~/plugins/faqAccordion.client.js',
+    
     
   ]
 });
